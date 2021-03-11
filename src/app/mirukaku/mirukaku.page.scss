@@ -1,3 +1,4 @@
+/*
 .miru{
     width:20px
 }
@@ -6,3 +7,25 @@
     display:inline-block;
     width:160px;
 }
+*/
+
+#miru-button{
+    display: none;
+  }
+
+#kiku-button{
+    display: none;
+}
+
+#mirukiku-button-label{
+    text-align: center;
+    font-size: 5.0em;
+    color: #000;
+    background-color: #cbf266;
+    border-radius: 10px;
+    padding: 12px 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }

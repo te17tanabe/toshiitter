@@ -1,3 +1,4 @@
+<!--
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
@@ -6,7 +7,9 @@
     <ion-title>編集ページ</ion-title>
   </ion-toolbar>
 </ion-header>
-
+-->
+<ion-content>
+<!--
 <ion-content>
   <div class="button-area ion-padding">
     <label for="file-button" id="file-button-label">日誌の写真を選択</label>
@@ -15,6 +18,7 @@
   <div *ngIf="imageFlag">
     <ion-img [src]="image" id="image"></ion-img>
   </div>
+-->
 
   <!--
   <ion-card>
@@ -27,6 +31,8 @@
     <ion-card-content>次のオススメの文[3]: RECOMMEND3</ion-card-content>
   </ion-card>
   -->
+
+<!--
   <div id="category-center" class="ion-text-center ion-padding-top">
     投稿日誌のカテゴリを選択してください
   </div>
@@ -55,6 +61,7 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+  -->
 
   <form (submit)="postArticle()">
     <ion-item>

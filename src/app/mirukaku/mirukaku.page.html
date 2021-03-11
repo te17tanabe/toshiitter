@@ -1,8 +1,37 @@
 <ion-content>
+  <!--
   <div class="miru">
+<<<<<<< HEAD
+    <ion-button size="large" shape="round"><h1>見る</h1></ion-button>
+=======
     <ion-button size="large" shape="round"><h1>見るmiruみる</h1></ion-button>
+>>>>>>> 55d8c5725525cd5c837ac147f8d728f86e6d7426
   </div>
   <div class="kaku">
-    <ion-button size="large" shape="round"><h1>書くkaku</h1></ion-button>
+    <ion-button size="large" shape="round"><h1>書く</h1></ion-button>
   </div>
+  -->
+  <div class="ion-padding">
+    <label for="miru-button" id="mirukiku-button-label">見る</label>
+    <input id="miru-button" (click)="getOtherPage1()"/>
+    <!--
+    <input type="file" accept="image/*" id="file-button" (change)="loadPicture($event)"/>
+    -->
+  </div>
+  <div class="ion-padding">
+    <label for="kiku-button" id="mirukiku-button-label">書く</label>
+    <input id="kiku-button" (click)="getOtherPagee()"/>
+    <!--
+    <input type="file" accept="image/*" id="file-button" (change)="loadPicture($event)"/>
+    -->
+  </div>
+  <!--
+  <div class="ion-padding">
+    <label for="file-button" id="file-button-label">日誌の写真を選択</label>
+    <input type="file" accept="image/*" id="file-button" (change)="loadPicture($event)"/>
+  </div>
+  <div *ngIf="imageFlag">
+    <ion-img [src]="image" id="image"></ion-img>
+  </div>
+  -->
 </ion-content>

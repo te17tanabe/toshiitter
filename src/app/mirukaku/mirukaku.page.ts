@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mirukaku',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MirukakuPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router:Router,
+  ) { }
 
   ngOnInit() {
+  }
+
+  getOtherPage1 = () => {
+    this.router.navigate(['/tabs','tab1'])
+  }
+
+  getOtherPagee = () => {
+    this.router.navigate(['/edit','1'])
   }
 
 }
