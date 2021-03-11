@@ -1,35 +1,45 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title><ion-img id="icon" src="../../assets/icon/icon.png"></ion-img></ion-title>
+ <!-- <ion-toolbar>
+    <ion-title><ion-img id="icon" src="../../assets/icon/Ojii.png"></ion-img></ion-title>
   </ion-toolbar>
 </ion-header>
-
+-->
 <ion-content [fullscreen]="true">
   <!-- 座標テスト
   <div>{{latitude}}: {{longitude}}</div>
   -->
-  
+  <!--
   <ng-container *ngFor="let a of articleList">
-    <ion-card button="true" color="{{a.category_color}}-{{a.category_level}}">
+    <ion-card button="true"color="{{a.category_color}}-{{a.category_level}}">
       <ion-card-header routerLink="/article/1/{{a.article_id}}/{{a.title}}/{{a.text}}/{{a.id}}">
         <ion-card-subtitle>[{{a.distance.toFixed(1)}}km] {{a.id}}さんの投稿<br>{{a.date}}</ion-card-subtitle>
         <ion-card-title>{{a.title}}</ion-card-title>
       </ion-card-header>
     </ion-card>
   </ng-container>
-
+  -->
+  <ng-container *ngFor="let a of articleList">
+    <ion-card button="true">
+      <ion-card-header routerLink="/article/1/{{a.article_id}}/{{a.title}}/{{a.text}}/{{a.id}}">
+        <ion-card-subtitle> {{a.id}}さんの投稿<br>{{a.date}}</ion-card-subtitle>
+        <ion-card-title>{{a.title}}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  </ng-container>
+<!--
   <ion-fab vertical="bottom" horizontal="start" slot="fixed">
     <ion-fab-button color="base-green" (click)="navigateToSelf()">
       <ion-icon name="newspaper-outline"></ion-icon>
     </ion-fab-button>
   </ion-fab>
-
+-->
+<!--
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button color="base-green" (click)="navigateToEdit()">
       <ion-icon name="add-outline"></ion-icon>
     </ion-fab-button>
   </ion-fab>
-
+-->
   <!-- GPS & Alert test -->
   <!--
   <form>
