@@ -12,7 +12,7 @@ const routes: Routes = [
   {
     path: '',
     // loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
-    redirectTo: 'login',
+    redirectTo: 'mirukaku',
     pathMatch: 'full'
   },
   //*/
@@ -39,7 +39,12 @@ const routes: Routes = [
   {
     path: 'edit/:tab',
     loadChildren: () => import('./edit/edit.module').then( m => m.EditPageModule)
+  },
+  {
+    path: 'mirukaku',
+    loadChildren: () => import('./mirukaku/mirukaku.module').then( m => m.MirukakuPageModule)
   }
+
 ];
 @NgModule({
   imports: [

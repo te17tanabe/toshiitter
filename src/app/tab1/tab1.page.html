@@ -8,7 +8,7 @@
   <!-- 座標テスト
   <div>{{latitude}}: {{longitude}}</div>
   -->
-
+  
   <ng-container *ngFor="let a of articleList">
     <ion-card button="true" color="{{a.category_color}}-{{a.category_level}}">
       <ion-card-header routerLink="/article/1/{{a.article_id}}/{{a.title}}/{{a.text}}/{{a.id}}">
