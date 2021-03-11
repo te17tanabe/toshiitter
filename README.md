@@ -26,3 +26,4 @@ https://ionicframework.com/jp/docs/angular/pwa
 * 記事自体は投稿時の投稿者の属性が反映されている
 
 ## 利用規約
+"# toshiitter1" 
