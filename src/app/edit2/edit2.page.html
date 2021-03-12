@@ -1,0 +1,21 @@
+<!--
+<ion-header>
+  <ion-toolbar>
+    <ion-title>edit2</ion-title>
+  </ion-toolbar>
+</ion-header>
+-->
+
+<ion-content>
+  <form (submit)="postArticle()">
+    <ion-item>
+      <!--
+        <ion-label position="floating">タイトル</ion-label>
+        <ion-input required type="text" [(ngModel)]="title" name="title"></ion-input>
+      -->
+      <ion-label position="floating">本文</ion-label>
+      <ion-textarea [(ngModel)]="text" name="text"></ion-textarea>
+    </ion-item>
+    <ion-button id="post-article-button" type="submit" expand="block" color="base-green">返信する</ion-button>
+  </form>
+</ion-content>

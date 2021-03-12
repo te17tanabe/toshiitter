@@ -56,7 +56,7 @@
 
   <ion-card *ngFor="let c of commentList" button="true">
     <ion-card-header>
-      <ion-card-subtitle>{{c.id}}さんの投稿</ion-card-subtitle>
+      <ion-card-subtitle>{{c.id}}さんの返信</ion-card-subtitle>
     </ion-card-header>
     <ion-card-content id ="ret">{{c.text}}</ion-card-content>
   </ion-card>
@@ -72,6 +72,9 @@
       <button type="submit" id="post-comment-button">コメントを投稿する</button>
     </div>
     -->
-    <ion-button id="post-comment-button" type="submit" expand="block" color="base-green">返信</ion-button>
+
+    <div (click)="getOtherPage10()">
+      <ion-button id="post-comment-button" type="submit" expand="block" color="base-green">返信</ion-button>
+    </div>
   </form>
 </ion-content>
