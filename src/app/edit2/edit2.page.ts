@@ -119,6 +119,7 @@ export class Edit2Page implements OnInit {
           res => {
             console.log(res);
             this.navigate();
+            this.getOtherPage12();
             this.alertPost();
           },
           error => console.error(error)
@@ -135,6 +136,10 @@ export class Edit2Page implements OnInit {
     })
 
     await alert.present();
+  }
+
+  getOtherPage12 = () => {
+    this.router.navigate(['/article'])
   }
 
   navigate = () => {
