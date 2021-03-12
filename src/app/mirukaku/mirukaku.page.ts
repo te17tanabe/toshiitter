@@ -12,9 +12,11 @@ export class MirukakuPage implements OnInit {
     private router:Router,
   ) { }
 
-  ngOnInit() {
+  ngOnInit(){
+    if(typeof localStorage.flag === "undefined") {
+      this.router.navigate(['/name']);
+    }
   }
-
   getOtherPage1 = () => {
     this.router.navigate(['/tabs','tab1'])
   }
