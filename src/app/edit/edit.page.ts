@@ -126,6 +126,7 @@ export class EditPage implements OnInit {
       error => console.error(error)
     );
   }
+  /*
   postComment = () => {
     this.geolocation.getCurrentPosition().then(
       (resp) => {
@@ -146,6 +147,7 @@ export class EditPage implements OnInit {
       error => console.error(error)
     );
   }
+  */
 
   async alertPost() {
     const alert = await this.alertController.create({
