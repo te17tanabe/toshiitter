@@ -44,6 +44,7 @@ export class Tab1Page implements OnInit {
   // 自動ログイン管理, 記事取得
   ngOnInit(){
     this.username=localStorage.name;
+
     console.log("Init!");
     this.postObj["id"] = localStorage.id;
     this.postObj["password"] = localStorage.password;
@@ -69,6 +70,7 @@ export class Tab1Page implements OnInit {
       // Function
       this.getList();
     }, 1500);
+    */
   }
 
   async alertGps() {

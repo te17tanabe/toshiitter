@@ -14,6 +14,7 @@ export class EditPage implements OnInit {
   image: any;
   imgHeight: number = 600;
 
+  name: string = 'わたくし';
   title: string = '';
   text: string = '';
 
@@ -125,6 +126,28 @@ export class EditPage implements OnInit {
       error => console.error(error)
     );
   }
+  /*
+  postComment = () => {
+    this.geolocation.getCurrentPosition().then(
+      (resp) => {
+        this.postObj['name'] = this.name;
+        this.postObj['title'] = this.title;
+        this.postObj['text'] = this.text;
+
+        const body = this.postObj;
+        this.gs.http('http://140.227.58.187/hakakka/SNSS/snss_send.php', body).subscribe(
+          res => {
+            console.log(res);
+            this.navigate();
+            this.alertPost();
+          },
+          error => console.error(error)
+        );
+      },
+      error => console.error(error)
+    );
+  }
+  */
 
   async alertPost() {
     const alert = await this.alertController.create({
