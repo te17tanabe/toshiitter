@@ -12,11 +12,13 @@ export class NamePage implements OnInit {
     private router:Router,
   ) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
+  text:string="";
 
   getOtherPage = () => {
-    this.router.navigate(['/tabs','tab1'])
+    localStorage.name=this.text
+    localStorage.flag="ok"
+    this.router.navigate(['/mirukaku'])
   }
 
 }

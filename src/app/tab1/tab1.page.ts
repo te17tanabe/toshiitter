@@ -27,6 +27,8 @@ export class Tab1Page implements OnInit {
   articleObj: any = {};
   objWord: any;
 
+  username: any = "";
+
   // 記事
   articleList: any[] = [];
 
@@ -41,6 +43,7 @@ export class Tab1Page implements OnInit {
 
   // 自動ログイン管理, 記事取得
   ngOnInit(){
+    this.username=localStorage.name;
     console.log("Init!");
     this.postObj["id"] = localStorage.id;
     this.postObj["password"] = localStorage.password;

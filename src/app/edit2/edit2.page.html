@@ -16,6 +16,8 @@
       <ion-label position="floating">本文</ion-label>
       <ion-textarea [(ngModel)]="text" name="text"></ion-textarea>
     </ion-item>
-    <ion-button id="post-article-button" type="submit" expand="block" color="base-green">返信する</ion-button>
+    <div (click)="getOtherPage12()">
+      <ion-button id="post-article-button" type="submit" expand="block" color="base-orange">返信する</ion-button>
+    </div>
   </form>
 </ion-content>

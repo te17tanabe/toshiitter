@@ -113,7 +113,7 @@ export class EditPage implements OnInit {
         this.postObj['hash'] = localStorage.hash;
 
         const body = this.postObj;
-        this.gs.http('https://kn46itblog.com/hackathon/winter2020/php_apis/registerDiaryArticle.php', body).subscribe(
+        this.gs.http('http://140.227.58.187/hakakka/SNSS/registerDiaryArticle.php', body).subscribe(
           res => {
             console.log(res);
             this.navigate();
