@@ -43,7 +43,11 @@ const routes: Routes = [
   {
     path: 'mirukaku',
     loadChildren: () => import('./mirukaku/mirukaku.module').then( m => m.MirukakuPageModule)
+  },  {
+    path: 'name',
+    loadChildren: () => import('./name/name.module').then( m => m.NamePageModule)
   }
+
 
 ];
 @NgModule({

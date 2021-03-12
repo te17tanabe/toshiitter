@@ -62,13 +62,16 @@
     </ion-row>
   </ion-grid>
   -->
-
+  
   <form (submit)="postArticle()">
+  
     <ion-item>
-      <ion-label position="floating">タイトル</ion-label>
-      <ion-input required type="text" [(ngModel)]="title" name="title"></ion-input>
-      <ion-label position="floating">本文</ion-label>
-      <ion-textarea [(ngModel)]="text" name="text"></ion-textarea>
+      <ion-label id="title" position="stacked"><h1>タイトル</h1></ion-label>
+      <ion-input placeholder="ここを押して下さい"required type="text" [(ngModel)]="title" name="title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label id="honbun" position="stacked"><h1>本文</h1></ion-label>
+      <ion-textarea rows="10" cols={20} placeholder="ここを押して下さい" [(ngModel)]="text" name="text"></ion-textarea>
     </ion-item>
     <!--
     <div class="button-area">
