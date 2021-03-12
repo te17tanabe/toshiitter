@@ -47,8 +47,8 @@ const routes: Routes = [
   {
     path: 'edit2',
     loadChildren: () => import('./edit2/edit2.module').then( m => m.Edit2PageModule)
-  },{
-    path: 'name',
+  },
+  {  path: 'name',
     loadChildren: () => import('./name/name.module').then( m => m.NamePageModule)
   }
 
