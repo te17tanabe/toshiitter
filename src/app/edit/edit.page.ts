@@ -128,7 +128,7 @@ export class EditPage implements OnInit {
 
   async alertPost() {
     const alert = await this.alertController.create({
-      message: '日誌が投稿されました',
+      message: '発言しました',
       buttons: ['OK']
     })
 
