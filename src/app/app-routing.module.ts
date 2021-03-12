@@ -43,9 +43,13 @@ const routes: Routes = [
   {
     path: 'mirukaku',
     loadChildren: () => import('./mirukaku/mirukaku.module').then( m => m.MirukakuPageModule)
-  },  {
+  },
+  {
     path: 'edit2',
     loadChildren: () => import('./edit2/edit2.module').then( m => m.Edit2PageModule)
+  },{
+    path: 'name',
+    loadChildren: () => import('./name/name.module').then( m => m.NamePageModule)
   }
 
 

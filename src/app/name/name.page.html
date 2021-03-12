@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><h1>名前を入力してください</h1></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label id="name" position="floating"><h1>名前</h1></ion-label>
+    <ion-textarea [(ngModel)]="text" name="text"></ion-textarea>
+    <!--
+    <ion-input required type="text" [(ngModel)]="name" name="name"></ion-input> 
+    -->
+  </ion-item>
+  <div class="ion-padding">
+    <label for="tsugie-button" id="tsugie-button-label">次へ</label>
+      <input id="tsugie-button" (click)="getOtherPage()"/>
+  </div>
+</ion-content>
