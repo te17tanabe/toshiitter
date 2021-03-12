@@ -70,6 +70,9 @@ export class ArticlePage implements OnInit {
 
     await alert.present();
   }
+  getOtherPage10 = () => {
+    this.router.navigate(['/edit2'])
+  }
 
   postComment = () => {
     // 'article/:tab/:article_id/:title/:text/:id'
@@ -83,8 +86,9 @@ export class ArticlePage implements OnInit {
           // console.log(res);
           // this.router.navigate(['/article', this.tab, this.article_id, this.title, this.text, this.id]);
           this.loadContents();
-          this.alertComment();
-          this.comment = '';
+          this.getOtherPage10();
+          //this.alertComment();
+          //this.comment = '';
         },
         error => console.error(error)
       );
@@ -138,5 +142,4 @@ export class ArticlePage implements OnInit {
       );
     }
   }
-
 }
